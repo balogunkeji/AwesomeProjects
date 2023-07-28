@@ -8,7 +8,7 @@ export default function App() {
           <Image  style={styles.image}  source={require('./assets/illustration.png')} />
         </View>
         <View style={styles.text}>
-          <Text style={{fontSize: 40,  fontWeight: 'bold',  textAlign: 'center'}}>Finacial lifeline in your pocket.</Text>
+          <Text style={{fontSize: 50,  fontWeight: 'bold',  textAlign: 'center'}}>Financial lifeline in your pocket.</Text>
           <Text style={{fontSize: 14,  textAlign: 'center',  paddingTop: 10, color: '#3a3a3a'}}>Apply for loans instantly on your mobile</Text>
           <View style={styles.inputStlye}>
             <View style={{flexDirection: 'row',  alignItems: 'center',}}>
@@ -61,10 +61,10 @@ const styles = StyleSheet.create({
           alignItems: 'center',
           marginTop: 25,
           flexDirection: 'row',
-          width: 350,
-          height: 70,
+          width: 355,
+          height: 75,
           backgroundColor: 'E8E9EB',
-          borderRadius: 30,
+          borderRadius: 20,
           paddingHorizontal: 20,
         },
         auth: {
