@@ -9,9 +9,18 @@ export default function App() {
         </View>
         <View style={styles.text}>
           <Text style={{fontSize: 40,  fontWeight: 'bold',  textAlign: 'center'}}>Finacial lifeline in your pocket.</Text>
-          <Text style={{fontSize: 14,  textAlign: 'center',  paddingTop: 17, color: 'grey'}}>Apply for loans instantly on your mobile</Text>
+          <Text style={{fontSize: 14,  textAlign: 'center',  paddingTop: 10, color: '#3a3a3a'}}>Apply for loans instantly on your mobile</Text>
           <View style={styles.inputStlye}>
-          
+            <View style={{flexDirection: 'row',  alignItems: 'center',}}>
+            <Image  style={{width: 40, height: 40,  borderRadius: 100}}  source={require('./assets/america.png')} />
+              <View style={{marginLeft: 10}}>
+              <Text style={{fontSize: 14,  color: '#aeaeae'}}>I live in: </Text>
+              <Text style={{fontSize: 16,  fontWeight: 'bold', paddingTop: 2,}}>United States:</Text>
+              </View>
+            </View>
+            <View>
+              <Text style={{fontSize: 30,  fontWeight: 'bold', paddingTop: 2,  color: '#BBBCB6'}}>&#x2304;</Text>
+            </View>
         </View>
         <View style={styles.auth}>
           <Text style={{fontSize: 20,  fontWeight: 'bold',  textAlign: 'center'}}>Sign In</Text>
@@ -34,21 +43,29 @@ const styles = StyleSheet.create({
   },
   imgStyle:{
     height:  100,
-    width: 100
+    width: 100,
+    marginBottom: 20,
   },
   image:{
     width: 430,
-    height: 440,
+    height:  450,
     resizeMode: 'cover',
   },
   text: {
-      padding: 20,
+      paddingHorizontal: 20,
       justifyContent: 'center',
       alignItems: 'center',
     },
     inputStlye: {
-          justifyContent: 'center',
+          justifyContent: 'space-between',
           alignItems: 'center',
+          marginTop: 25,
+          flexDirection: 'row',
+          width: 350,
+          height: 70,
+          backgroundColor: 'E8E9EB',
+          borderRadius: 30,
+          paddingHorizontal: 20,
         },
         auth: {
           width: '100%',
